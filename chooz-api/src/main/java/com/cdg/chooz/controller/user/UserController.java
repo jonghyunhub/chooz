@@ -1,38 +1,17 @@
 package com.cdg.chooz.controller.user;
 
-import com.example.manymanyUsers.comment.service.CommentService;
-import com.example.manymanyUsers.common.dto.CommonResponse;
-import com.example.manymanyUsers.statistics.service.StatisticsService;
-import com.example.manymanyUsers.user.domain.User;
-import com.example.manymanyUsers.user.dto.*;
-import com.example.manymanyUsers.user.service.UserService;
-import com.example.manymanyUsers.vote.domain.Vote;
-import com.example.manymanyUsers.vote.enums.VoteType;
-import com.example.manymanyUsers.vote.service.VoteService;
-import io.jsonwebtoken.Claims;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import javassist.NotFoundException;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Slice;
-import org.springframework.data.domain.SliceImpl;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
-import javax.validation.Valid;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/api/user")
 @RestController
 @RequiredArgsConstructor
 public class UserController {
-    private final UserService userService;
-    private final VoteService voteService;
-    private final StatisticsService statisticsService;
-    private final CommentService commentService;
+//    private final UserService userService;
+//    private final VoteService voteService;
+//    private final StatisticsService statisticsService;
+//    private final CommentService commentService;
 
 
 

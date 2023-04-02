@@ -1,10 +1,7 @@
 package com.cdg.chooz.controller.user.request;
 
-import com.cdg.chooz.domain.user.SignupInfo;
+import com.cdg.chooz.domain.user.GeneralSignupInfo;
 import lombok.Data;
-
-import java.util.HashMap;
-import java.util.Map;
 
 @Data
 public class GeneralSignUpRequest {
@@ -12,11 +9,7 @@ public class GeneralSignUpRequest {
     private String email;
     private String password;
 
-    public SignupInfo toDomain() {
-        Map<String, String> propertiesValues = new HashMap<>();
-        propertiesValues.put("name", name);
-        propertiesValues.put("email", email);
-        propertiesValues.put("password", password);
-        return new SignupInfo(propertiesValues);
+    public GeneralSignupInfo toDomain() {
+        return new GeneralSignupInfo(name, email, password);
     }
 }

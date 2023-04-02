@@ -1,4 +1,4 @@
-package com.cdg.chooz.entity.common;
+package com.cdg.chooz.db.common;
 
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;

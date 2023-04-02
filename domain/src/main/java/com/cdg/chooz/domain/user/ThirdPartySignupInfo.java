@@ -6,10 +6,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Getter
-public class SignupInfo {
+public class ThirdPartySignupInfo {
     private Map<String, String> propertiesValues;
 
-    public SignupInfo(Map<String, String> propertiesValues) {
+    public ThirdPartySignupInfo(Map<String, String> propertiesValues) {
         this.propertiesValues = new HashMap<>();
     }
 }

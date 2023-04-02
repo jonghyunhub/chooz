@@ -8,7 +8,6 @@ import com.cdg.chooz.controller.common.CommonResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.data.domain.Slice;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -44,9 +43,9 @@ public class CommentController {
     }
 
 
-    @Operation(description = "댓글 조회")
-    @GetMapping("/votes/{voteId}/comments")
-    public ResponseEntity<Slice<CommentGetResponse>> getComment(@PathVariable Long voteId, @ModelAttribute CommentGetRequest commentGetRequest) {
+//    @Operation(description = "댓글 조회")
+//    @GetMapping("/votes/{voteId}/comments")
+//    public ResponseEntity<Slice<CommentGetResponse>> getComment(@PathVariable Long voteId, @ModelAttribute CommentGetRequest commentGetRequest) {
 
 //        CommentListWithCount commentListWithCount = commentService.getComments(voteId, commentGetRequest.getGender(), commentGetRequest.getAge(), commentGetRequest.getMbti(), commentGetRequest.getSize(), commentGetRequest.getPage(), commentGetRequest.getSortBy());
 
@@ -88,8 +87,8 @@ public class CommentController {
 
 
 //        Slice<CommentGetResponse> slice = new SliceImpl<>(commentGetResponse, pageable, hasNext);
-        return ResponseEntity.ok().body(null);
-    }
+//        return ResponseEntity.ok().body(null);
+//    }
 
     @Operation(description = "맛보기 댓글 조회")
     @GetMapping("/votes/{voteId}/comments/hot")

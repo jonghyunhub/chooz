@@ -10,6 +10,5 @@ dependencies {
     implementation project(':domain')
     implementation project(':storage:db-jpa')
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springdoc:springdoc-openapi-ui:1.6.9'
 }

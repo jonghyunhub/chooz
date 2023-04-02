@@ -4,7 +4,7 @@ import com.cdg.chooz.domain.comment.Emotion;
 import com.cdg.chooz.domain.vote.AgeType;
 import com.cdg.chooz.domain.vote.GenderType;
 import com.cdg.chooz.domain.vote.MbtiType;
-import com.cdg.chooz.entity.common.BaseTimeEntity;
+import com.cdg.chooz.db.common.BaseTimeEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
