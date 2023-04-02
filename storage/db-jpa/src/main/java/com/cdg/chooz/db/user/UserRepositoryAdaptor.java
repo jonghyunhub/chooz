@@ -21,4 +21,11 @@ class UserRepositoryAdaptor implements UserRepository {
         UserEntity userEntity = new UserEntity(user);
         userJpaRepository.save(userEntity);
     }
+
+    @Override
+    public User findByProviderId(String providerId) {
+        return userJpaRepository.findByProviderId(providerId)
+                .map(UserEntity::toDomain)
+                .orElse(null);
+    }
 }

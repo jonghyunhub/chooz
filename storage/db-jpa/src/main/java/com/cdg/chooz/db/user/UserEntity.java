@@ -119,4 +119,17 @@ public class UserEntity extends BaseTimeEntity {
         this.categoryLists.clear();
     }
 
+    public User toDomain() {
+        User user = User.builder()
+                .id(id)
+                .name(nickname)
+                .email(email)
+                .age(age)
+                .gender(gender)
+                .mbti(mbti)
+                .provider(provider)
+                .providerId(providerId)
+                .build();
+        return user;
+    }
 }

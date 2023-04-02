@@ -2,9 +2,17 @@ package com.cdg.chooz.domain.user;
 
 import com.cdg.chooz.domain.vote.GenderType;
 import com.cdg.chooz.domain.vote.MbtiType;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.util.Optional;
 
 @Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
     private Long id;
     private String name;
@@ -28,5 +36,10 @@ public class User {
         this.name = signupInfo.getName();
         this.email = signupInfo.getEmail();
         this.password = signupInfo.getPassword();
+    }
+
+    public User(String providerId, ProviderType providerType) {
+        this.providerId = providerId;
+        this.provider = providerType;
     }
 }
